@@ -4,6 +4,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
+    const MENU_SWITCH_WIDTH = 1100;
     const twilight = useTheme();
     const [menuOpen, setMenuOpen] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.window.innerWidth);
@@ -69,12 +70,10 @@ const Header = () => {
 
     return (
         <Box sx={{width:'100%', backgroundColor:twilight.dark, padding:'10px 0'}}>
-            {/* 1100 px is a good minimum size and then switch to a menubar system */}
-            {/* <div style={{width:"1250px", margin:'auto'}}> */}
             <div style={{width:"80%", margin:'auto', display:'flex'}}>
                 <h2 style={{display:'inline-block', color:twilight.lightPeach, margin:'0', fontSize:'30px'}}>Vicky Chan</h2>
                 <div className="headerButts">
-                    {windowWidth >= 1100 ? headerButtons():menuList()}
+                    {windowWidth >= MENU_SWITCH_WIDTH ? headerButtons():menuList()}
                     <Drawer anchor="top" open={menuOpen} onClose={onCloseEvent(false)}>
                         {menu()}
                     </Drawer>
