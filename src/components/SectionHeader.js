@@ -5,7 +5,10 @@ const SectionHeader = ({title}) => {
     const twilight = useTheme();
 
     return (
-        <Typography variant="h3" sx={{color:twilight.peach, textAlign:"center", textDecoration:`underline 5px solid ${twilight.turquoise}`}}>{title}</Typography>
+        <>
+        <div id={title} className="section"></div>
+        <Typography variant="h3" sx={{color:twilight.peach, textAlign:"center", textDecoration:`underline 5px solid ${twilight.turquoise}`, marginBottom:"50px"}}>{title}</Typography>
+        </>
     )
 }
 
