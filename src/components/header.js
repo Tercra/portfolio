@@ -65,7 +65,7 @@ const Header = () => {
 
     return (
         <Box sx={{width:'100%', backgroundColor:twilight.dark, padding:'10px 0', position:"sticky", top:0}}>
-            <div style={{width:"80%", margin:'auto', display:'flex'}}>
+            <div style={{maxWidth:"1140px", width:"80%", margin:'auto', display:'flex'}}>
                 <h2 style={{display:'inline-block', color:twilight.lightPeach, margin:'0', fontSize:'30px'}}>Vicky Chan</h2>
                 <div className="headerButts">
                     {windowWidth >= MENU_SWITCH_WIDTH ? headerButtons():menuList()}

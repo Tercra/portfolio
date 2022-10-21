@@ -25,7 +25,7 @@ const Introduction = () => {
 
 
     return (
-        <Box sx={{border:`dashed 5px ${twilight.turquoise}`, width:"60%", margin:"100px auto", padding:"30px"}}>
+        <Box sx={{border:`dashed 5px ${twilight.turquoise}`, margin:"100px auto", padding:"30px", maxWidth:"800px", width:"60%"}}>
             <Typography variant="h1" color={twilight.lightPeach} fontFamily="monospace">
                 Vicky
             </Typography>

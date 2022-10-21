@@ -1,5 +1,6 @@
 import { useTheme } from "@emotion/react";
 import { Box, Typography } from "@mui/material"
+import ProjectCard from "./ProjectCard";
 import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
@@ -8,6 +9,7 @@ const Projects = () => {
     return (
         <Box>
             <SectionHeader title="Projects" />
+            <ProjectCard />
         </Box>
     )
 };
