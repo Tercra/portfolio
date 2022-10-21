@@ -7,6 +7,10 @@ body {
   font-family: monospace;
 }
 
+.section {
+  scroll-margin-top : 80px;
+}
+
 div.headerButts {
   display: inline-flex;
   justify-content: flex-end;

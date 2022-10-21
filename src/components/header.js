@@ -26,9 +26,11 @@ const Header = () => {
         <List sx={{backgroundColor:twilight.lightDark, color:twilight.lightPeach}}>
             {naviOptions.map((text) => (
                 <ListItem key={text} disablePadding>
-                    <ListItemButton>
+                    <a style={{width:"100%", textDecoration:"none", color:"inherit"}} href={`#${text}`}>
+                    <ListItemButton onClick={()=>{setMenuOpen(false)}}>
                         <ListItemText disableTypography primary={text} style={{display:"flex", justifyContent:"flex-end", fontSize:"25px"}} />
                     </ListItemButton>
+                    </a>
                 </ListItem>
             ))}
         </List>
@@ -62,7 +64,7 @@ const Header = () => {
     }
 
     return (
-        <Box sx={{width:'100%', backgroundColor:twilight.dark, padding:'10px 0'}}>
+        <Box sx={{width:'100%', backgroundColor:twilight.dark, padding:'10px 0', position:"sticky", top:0}}>
             <div style={{width:"80%", margin:'auto', display:'flex'}}>
                 <h2 style={{display:'inline-block', color:twilight.lightPeach, margin:'0', fontSize:'30px'}}>Vicky Chan</h2>
                 <div className="headerButts">

@@ -7,7 +7,7 @@ const Projects = () => {
 
     return (
         <Box>
-            <div id="Projects"></div>
+            <div id="Projects" className="section"></div>
             <SectionHeader title="Projects" />
         </Box>
     )
