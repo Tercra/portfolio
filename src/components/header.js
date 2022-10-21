@@ -9,6 +9,8 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.window.innerWidth);
 
+    const naviOptions = ["Timeline", "Projects", "Skills", "digimon"];
+
     useLayoutEffect(() => {
         function resize() {
             setWindowWidth(window.window.innerWidth);
@@ -22,7 +24,7 @@ const Header = () => {
     const menu = () => {
         return (
         <List sx={{backgroundColor:twilight.lightDark, color:twilight.lightPeach}}>
-            {["Timeline", "Project", "Skills", "digimon"].map((text, index) => (
+            {naviOptions.map((text) => (
                 <ListItem key={text} disablePadding>
                     <ListItemButton>
                         <ListItemText disableTypography primary={text} style={{display:"flex", justifyContent:"flex-end", fontSize:"25px"}} />
@@ -44,18 +46,9 @@ const Header = () => {
     const headerButtons = () => {
         return (
             <>
-            <div className='headerButt'>
-                <a>Timeline</a>
-            </div>
-            <div className='headerButt'>
-                <a>Project</a>
-            </div>
-            <div className='headerButt'>
-                <a>Skills</a>
-            </div>
-            <div className='headerButt'>
-                <a>digimon</a>
-            </div>
+            {naviOptions.map((text) => {
+                return <a key={text} className="headerButt" href={`#${text}`}>{text}</a>
+            })}
             </>
         )
     }

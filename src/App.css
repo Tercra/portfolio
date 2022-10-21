@@ -13,7 +13,7 @@ div.headerButts {
   flex-grow: 1;
 }
 
-div.headerButt {
+.headerButt {
   width : 160px;
   color : #fbbbad;
   border : solid 1px;
@@ -21,6 +21,6 @@ div.headerButt {
   text-align : center;
 }
 
-div.headerButt:hover {
+.headerButt:hover {
   color: #ee8695 !important;
 }
