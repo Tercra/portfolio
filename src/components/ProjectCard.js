@@ -13,11 +13,11 @@ const ProjectCard = () => {
             <Box sx={{flexGrow:1, padding:"15px", minWidth:"350px", maxWidth:"50%"}}>
                 <Typography variant="h3" sx={{fontFamily:"monospace", color:twilight.dark}}>Derit</Typography>
                 <Box sx={{display:"flex", flexWrap:"wrap", gap:"5px"}}>
-                    <Chip size="small" label="Node.js" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach}}/>
-                    <Chip size="small" label="Express" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach}}/>
-                    <Chip size="small" label="MongoDB" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach}}/>
-                    <Chip size="small" label="React" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach}}/>
-                    <Chip size="small" label="Socket.io" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach}}/>
+                    <Chip size="small" label="Node.js" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
+                    <Chip size="small" label="Express" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
+                    <Chip size="small" label="MongoDB" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
+                    <Chip size="small" label="React" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
+                    <Chip size="small" label="Socket.io" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
                 </Box>
                 <Typography variant="body1" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"10px"}}>Derit is a Full Stack Web App for collaborative real-time comic and story creation with a focus on community building and user interaction.</Typography>
                 <div className="projButt"><a href="https://github.com/GabeLima/416-Project" target="_blank"><GitHubIcon sx={{fontSize:"20px"}} />Code</a></div>
