@@ -58,3 +58,8 @@ div.projButt a{
 div.projButt a:hover{
   background-color:#ee8695;
 }
+
+div.projLinks {
+  display : flex;
+  gap : 10px;
+}
