@@ -23,8 +23,38 @@ div.headerButts {
   border : solid 1px;
   font-size : 25px;
   text-align : center;
+  text-decoration: none;
 }
 
 .headerButt:hover {
   color: #ee8695 !important;
+}
+
+.projectImage {
+  width : 40%;
+  min-width: 350px;
+  border-radius : 15px;
+  border : solid 2px #333f58;
+  margin : auto;
+}
+
+div.projButt {
+  margin-top : 15px;
+  display : flex;
+  align-items: center;
+  /* background-color: #fbbbad; */
+}
+
+div.projButt a{
+  padding : 7px;
+  color : #292831;
+  background-color : #fbbbad;
+  border-radius : 15px;
+  font-family : monospace;
+  font-size :25px;
+  text-decoration : none;
+}
+
+div.projButt a:hover{
+  background-color:#ee8695;
 }
