@@ -4,6 +4,7 @@ const twilight = createTheme({
     dark : '#292831',
     lightDark : '#333f58',
     turquoise : '#4a7a96',
+    lightTurquoise : '#608ea9',
     peach : '#ee8695',
     lightPeach : '#fbbbad'
 });
