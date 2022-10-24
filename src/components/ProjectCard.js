@@ -1,26 +1,24 @@
 import { useTheme } from "@emotion/react";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Box, Chip, Typography } from "@mui/material";
-// import derit from "../projImages/Derit.png"
 
-const ProjectCard = () => {
+const ProjectCard = ({name, tools, descript, git, live}) => {
     const twilight = useTheme();
 
     return(
         <Box sx={{maxWidth:"800px", width:"80%", backgroundColor:twilight.lightTurquoise, margin:"25px auto", padding:"15px", borderRadius:"15px", display:"flex", flexFlow:"wrap"}}>
-            {/* <img src={derit} alt="Derit" className="projectImage"/> */}
-            <img src={require("../projImages/Derit.png")} alt="Derit" className="projectImage"/>
+            <img src={require(`../projImages/${name}.png`)} alt={name} className="projectImage"/>
             <Box sx={{flexGrow:1, padding:"15px", minWidth:"350px", maxWidth:"50%"}}>
-                <Typography variant="h3" sx={{fontFamily:"monospace", color:twilight.dark}}>Derit</Typography>
+                <Typography variant="h3" sx={{fontFamily:"monospace", color:twilight.dark}}>{name}</Typography>
                 <Box sx={{display:"flex", flexWrap:"wrap", gap:"5px"}}>
-                    <Chip size="small" label="Node.js" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
-                    <Chip size="small" label="Express" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
-                    <Chip size="small" label="MongoDB" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
-                    <Chip size="small" label="React" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
-                    <Chip size="small" label="Socket.io" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
+                    {tools.map((tool) => {
+                        return <Chip key={tool} size="small" label={tool} sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"5px", backgroundColor:twilight.lightPeach, fontSize:".7125rem"}}/>
+                    })}
                 </Box>
-                <Typography variant="body1" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"10px"}}>Derit is a Full Stack Web App for collaborative real-time comic and story creation with a focus on community building and user interaction.</Typography>
-                <div className="projButt"><a href="https://github.com/GabeLima/416-Project" target="_blank"><GitHubIcon sx={{fontSize:"20px"}} />Code</a></div>
+                <Typography variant="body1" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"10px"}}>{descript}</Typography>
+                {git != undefined && <div className="projButt"><a href={git} target="_blank"><GitHubIcon sx={{fontSize:"20px"}} />Code</a></div>}
+                {live != undefined && <div className="projButt"><a href={live} target="_blank"><OpenInNewIcon sx={{fontSize:"20px"}} />Live</a></div>}
             </Box>
         </Box>
     )

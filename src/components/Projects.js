@@ -4,12 +4,16 @@ import ProjectCard from "./ProjectCard";
 import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
-    const twilight = useTheme();
+    const projects = require("../data/projects.json");
 
     return (
         <Box>
             <SectionHeader title="Projects" />
-            <ProjectCard />
+            {Object.keys(projects).map((key) => {
+                const proj = projects[key];
+
+                return <ProjectCard key={key} name={key} tools={proj.Tools} descript={proj.Description} git={proj?.Git} live={proj?.Live} />
+            })}
         </Box>
     )
 };

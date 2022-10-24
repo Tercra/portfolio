@@ -1,0 +1,20 @@
+{
+    "Derit" : {
+        "Tools" : ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
+        "Description" : "Derit is a Full Stack Web App for collaborative real-time comic and story creation with a focus on community building and user interaction.",
+        "Git" : "https://github.com/GabeLima/416-Project"
+    },
+    "Collaborative Document Editor" : {
+        "Tools" : ["MongoDB", "Express", "React", "Node.js", "Web Sockets", "Quill", "ShareDB", "Elasticsearch", "NGINX", "Upcloud"],
+        "Description" : " An application that mimics Google Docs' real-time editing with multiple people with the use of OT transformation. The editor can do basic text editing and the insertion of images."
+    },
+    "Pixiv Image Scraper" : {
+        "Tools" : ["Python", "tkinter"],
+        "Description" : "An application with a GUI that allows users to input info so they can download illustrations from the website, Pixiv."
+    },
+    "MindScape" : {
+        "Tools" : ["Typescript", "Phaser"],
+        "Description" : "A 2D puzzle game that revolves around a story created by a team of three. Different solutions that the players reach will result in different routes the story will venture on.",
+        "Live" : "https://mind-scape.firebaseapp.com/benchmark3"
+    }
+}

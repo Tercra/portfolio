@@ -11,7 +11,6 @@ function App() {
         <Header />
         <Introduction />
         <Projects />
-        <div style={{width:"50%", height:"1000px", backgroundColor:twilight.peach, border:"1px solid red"}}>hi</div>
       </ThemeProvider>
     </>
   );
