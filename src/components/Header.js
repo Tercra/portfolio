@@ -9,7 +9,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.window.innerWidth);
 
-    const naviOptions = ["Timeline", "Projects", "Skills", "digimon"];
+    const naviOptions = ["Top", "Projects"];
 
     useLayoutEffect(() => {
         function resize() {

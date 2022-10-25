@@ -9,6 +9,7 @@ function App() {
     <>
       <ThemeProvider theme={twilight}>
         <Header />
+        <div id="Top" className="section"></div>
         <Introduction />
         <Projects />
       </ThemeProvider>
