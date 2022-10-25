@@ -22,15 +22,28 @@ const Header = () => {
     }, [])
 
     const menu = () => {
+        const handleClick = (id)=>{
+            console.log(document.getElementById(id));
+            // setMenuOpen(false); this will cancel the scoll animation
+            document.getElementById(id).scrollIntoView({behavior:"smooth"});
+            
+            let isScrolling;
+            window.addEventListener("scroll", () => {
+                window.clearTimeout(isScrolling);
+
+                isScrolling = setTimeout(() => {
+                    setMenuOpen(false);
+                }, 40)
+            }, false);
+        }
+
         return (
         <List sx={{backgroundColor:twilight.lightDark, color:twilight.lightPeach}}>
             {naviOptions.map((text) => (
                 <ListItem key={text} disablePadding>
-                    <a style={{width:"100%", textDecoration:"none", color:"inherit"}} href={`#${text}`}>
-                    <ListItemButton onClick={()=>{setMenuOpen(false)}}>
-                        <ListItemText disableTypography primary={text} style={{display:"flex", justifyContent:"flex-end", fontSize:"25px"}} />
+                    <ListItemButton onClick={()=>{handleClick(text)}}>
+                        <ListItemText disableTypography primary={text} style={{display:"flex", justifyContent:"flex-end", fontSize:"1.8rem"}} />
                     </ListItemButton>
-                    </a>
                 </ListItem>
             ))}
         </List>
@@ -46,10 +59,14 @@ const Header = () => {
     }
 
     const headerButtons = () => {
+        const handleClick = (id)=>{
+            document.getElementById(id).scrollIntoView({behavior:"smooth"});
+        }
+
         return (
             <>
             {naviOptions.map((text) => {
-                return <a key={text} className="headerButt" href={`#${text}`}>{text}</a>
+                return <button key={text} className="headerButt" onClick={() => handleClick(text)}>{text}</button>
             })}
             </>
         )
