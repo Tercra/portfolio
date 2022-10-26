@@ -64,3 +64,22 @@ div.projLinks {
   display : flex;
   gap : 10px;
 }
+
+div.topChangeBG {
+  background-color : #333f58;
+  width : 76px;
+  height : 76px;
+  border-radius: 50%;
+  margin : auto;
+  position: absolute;
+  top : 0;
+  left : 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+div.changeBG {
+  background-color: #fbbbad;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}

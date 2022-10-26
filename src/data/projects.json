@@ -1,11 +1,11 @@
 {
     "Derit" : {
-        "Tools" : ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
+        "Tools" : ["MERN stack", "Socket.io"],
         "Description" : "Derit is a Full Stack Web App for collaborative real-time comic and story creation with a focus on community building and user interaction.",
         "Git" : "https://github.com/GabeLima/416-Project"
     },
     "Collaborative Document Editor" : {
-        "Tools" : ["MongoDB", "Express", "React", "Node.js", "Web Sockets", "ShareDB", "Elasticsearch", "NGINX", "Upcloud", "Quill"],
+        "Tools" : ["MERN stack", "Web Sockets", "ShareDB", "Elasticsearch", "NGINX", "Upcloud"],
         "Description" : " An application that mimics Google Docs' real-time editing with multiple people with the use of OT transformation. The editor can do basic text editing and the insertion of images."
     },
     "Pixiv Image Scraper" : {

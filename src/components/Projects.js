@@ -7,8 +7,8 @@ const Projects = () => {
     const projects = require("../data/projects.json");
 
     return (
-        <Box>
-            <SectionHeader title="Projects" />
+        <Box sx={{marginBottom:"60px"}}>
+            <SectionHeader title="Projects" normal={true} />
             {Object.keys(projects).map((key) => {
                 const proj = projects[key];
 

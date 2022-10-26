@@ -2,7 +2,7 @@ import './App.css';
 import twilight from './theme';
 
 import { ThemeProvider } from '@mui/material';
-import { Header, Introduction, Projects } from './components';
+import { Header, Introduction, Projects, Skills } from './components';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <div id="Top" className="section"></div>
         <Introduction />
         <Projects />
+        <Skills />
       </ThemeProvider>
     </>
   );
