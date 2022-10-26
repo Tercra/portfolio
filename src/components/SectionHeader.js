@@ -7,8 +7,8 @@ const SectionHeader = ({title, normal}) => {
     return (
         <div id={title} className="section">
             {normal ? 
-            <Typography variant="h3" sx={{color:twilight.peach, textAlign:"center", textDecoration:`underline 5px solid ${twilight.turquoise}`, marginBottom:"25px"}}>{title}</Typography> : 
-            <Typography variant="h3" sx={{color:twilight.dark, textAlign:"center", textDecoration:`underline 5px solid ${twilight.turquoise}`, marginBottom:"25px"}}>{title}</Typography>}
+            <Typography variant="h3" sx={{color:twilight.peach, textAlign:"center", textDecoration:`underline 5px solid ${twilight.turquoise}`, marginBottom:"25px", fontFamily:"monospace"}}>{title}</Typography> : 
+            <Typography variant="h3" sx={{color:twilight.dark, textAlign:"center", textDecoration:`underline 5px solid ${twilight.turquoise}`, marginBottom:"25px", fontFamily:"monospace"}}>{title}</Typography>}
         </div>
     )
 }

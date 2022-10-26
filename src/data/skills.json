@@ -1,0 +1,11 @@
+{
+    "Javascript" : "fa-brands fa-square-js",
+    "HTML" : "fa-brands fa-html5",
+    "CSS" : "fa-brands fa-css3-alt",
+    "Python" : "fa-brands fa-python",
+    "React" : "fa-brands fa-react",
+    "Node.js" : "fa-brands fa-node-js",
+    "Git" : "fa-brands fa-git-alt",
+    "Linux" : "fa-brands fa-linux",
+    "MongoDB" : "fa solid fa-database"
+}
