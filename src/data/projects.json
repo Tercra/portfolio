@@ -8,7 +8,7 @@
         "Tools" : ["MERN stack", "Web Sockets", "ShareDB", "Elasticsearch", "NGINX", "Upcloud"],
         "Description" : " An application that mimics Google Docs' real-time editing with multiple people with the use of OT transformation. The editor can do basic text editing and the insertion of images."
     },
-    "Pixiv Image Scraper" : {
+    "Pixiv Image Downloader" : {
         "Tools" : ["Python", "tkinter"],
         "Description" : "An application with a GUI that allows users to input info so they can download illustrations from the website, Pixiv."
     },

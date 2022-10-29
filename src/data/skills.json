@@ -7,5 +7,7 @@
     "Node.js" : "fa-brands fa-node-js",
     "Git" : "fa-brands fa-git-alt",
     "Linux" : "fa-brands fa-linux",
-    "MongoDB" : "fa solid fa-database"
+    "MongoDB" : "devicon-mongodb-plain",
+    "NGINX" : "devicon-nginx-original",
+    "C#" : "devicon-csharp-plain"
 }

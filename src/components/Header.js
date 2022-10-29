@@ -1,6 +1,6 @@
 import { Box, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText} from "@mui/material"
 import { useTheme } from "@mui/material/styles"
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
