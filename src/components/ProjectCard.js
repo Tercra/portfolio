@@ -18,8 +18,8 @@ const ProjectCard = ({name, tools, descript, git, live}) => {
                 </Box>
                 <Typography variant="body1" sx={{fontFamily:"monospace", color:twilight.dark, marginBottom:"10px"}}>{descript}</Typography>
                 <div className="projLinks">
-                    {git != undefined && <div className="projButt"><a href={git} target="_blank"><GitHubIcon sx={{fontSize:"20px"}} />Code</a></div>}
-                    {live != undefined && <div className="projButt"><a href={live} target="_blank"><OpenInNewIcon sx={{fontSize:"20px"}} />Live</a></div>}
+                    {git != undefined && <div className="projButt"><a href={git} target="_blank"><GitHubIcon sx={{fontSize:"1.5rem"}} />Code</a></div>}
+                    {live != undefined && <div className="projButt"><a href={live} target="_blank"><OpenInNewIcon sx={{fontSize:"1.5rem"}} />Live</a></div>}
                 </div>
             </Box>
         </Box>

@@ -11,6 +11,7 @@ body {
   scroll-margin-top : 80px;
 }
 
+/* HEADER related CSS */
 div.headerButts {
   display: inline-flex;
   justify-content: flex-end;
@@ -30,8 +31,10 @@ div.headerButts {
 
 .headerButt:hover {
   color: #ee8695 !important;
+  cursor : pointer;
 }
 
+/* PROJECT CARD related CSS */
 .projectImage {
   width : 40%;
   min-width: 350px;
@@ -66,6 +69,29 @@ div.projLinks {
   gap : 10px;
 }
 
+/* SKILLS section of the website */
+div.skillHolder {
+  width : 60%;
+  margin : auto;
+  color : #292831;
+  font-size: .9rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap : 1rem;
+}
+
+div.skillHolder i {
+  font-size: 5rem;
+}
+
+div.skillCard {
+  width:6rem;
+  text-align: center;
+  /* background-color: #ee8695; */
+}
+
+/* For when the background is different from the main background for the section */
 div.topChangeBG {
   background-color : #333f58;
   width : 76px;
@@ -87,23 +113,19 @@ div.changeBG {
   z-index: -2;
 }
 
-div.skillHolder {
-  width : 60%;
-  margin : auto;
-  color : #292831;
-  font-size: .9rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/* Stylizing for outgoing links for sites (ex. linkedIn) */
+div.introLinks {
+  margin-top: 1rem;
+  display : flex;
   gap : 1rem;
 }
 
-div.skillHolder i {
-  font-size: 5rem;
+div.introLinks i {
+  font-size : 4rem;
+  color : #fbbbad
 }
 
-div.skillCard {
-  width:6rem;
-  text-align: center;
-  /* background-color: #ee8695; */
+div.introLinks i:hover {
+  color : #ee8695;
+  cursor : pointer;
 }
