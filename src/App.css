@@ -114,18 +114,40 @@ div.changeBG {
 }
 
 /* Stylizing for outgoing links for sites (ex. linkedIn) */
-div.introLinks {
+div.links {
   margin-top: 1rem;
   display : flex;
   gap : 1rem;
 }
 
-div.introLinks i {
-  font-size : 4rem;
-  color : #fbbbad
+div.links a {
+  text-decoration: none;
 }
 
-div.introLinks i:hover {
+div.links i {
+  font-size : 4rem;
+  color : #fbbbad;
+}
+
+div.links i:hover {
   color : #ee8695;
   cursor : pointer;
+}
+
+footer {
+  background-color: #292831;
+  padding : 1rem;
+}
+
+footer .footerContainer {
+  margin: auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+footer p {
+  color: #fbbbad;
+  text-align: right;
+  font-size: 1.3rem;
 }

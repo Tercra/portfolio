@@ -2,6 +2,7 @@ import { useTheme } from "@emotion/react"
 import { Box, Typography } from "@mui/material"
 import { fontFamily } from "@mui/system";
 import { useLayoutEffect, useState } from "react";
+import Links from "./Links";
 
 const Introduction = () => {
     const DISPLAY_SWITCH_WIDTH = 1000;
@@ -37,11 +38,7 @@ const Introduction = () => {
                     Graduated from Stony Brook University and is currently seeking a job.
                 </Typography>
             </Box>
-            <div className="introLinks">
-                <a href="https://github.com/Tercra" target="_blank"><i className="devicon-github-original"></i></a>
-                <a href="https://www.linkedin.com/in/vicky-c-525052139/" target="_blank"><i className="devicon-linkedin-plain"></i></a>
-                <a href="mailto:vickychan480@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
+            <Links />
         </Box>
     )
 }
