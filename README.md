@@ -1,7 +1,36 @@
 # Tools
-
   - React
-  - Material UI
+  - Material UI + Material UI Icons
+  - Font Awesome (added to html)
+  - Devicon (added to html)
+ 
+ ## Notes/Reflections
+  - The components are a bit messy, because there are a mix of material ui and a mix of plain html + CSS
+  - Try to not use Material UI next time since it splits apart the CSS all over the place
+  - Also made the mistake of using icons from three different places unecessarily.
+    - Could have just narrowed it down to two. (Devicon + another) for my purposes.
+  - Objectively sucks at design
+    
+## Learning Points
+  - Playing around in CSS and learning more about it
+    - Grids and Flex displays are very useful, should learn more about them.
+  - Learned more about how to use themes in Material UI
+  - Learned about how to use icons
+  - condition ? code if true : code if false
+  - Optional Chaining (?.)
+  - index.js in a folder (and the exports from that js file) allows other files to import from the folder location instead of having seperate lines of code for each import file.
+  
+### Color Palette
+  - EX. "Theme color name" - "Hex of color"
+  - "dark" - `#292831`
+  - "lightDark" - `#333f58`
+  - "turquoise" - `#4a7a96`
+  - "lightTurquoise" - `#608ea9`
+  - "peach" - `#ee8695`
+  - "lightPeach" - `#fbbbad`
+
+
+
 
 # Getting Started with Create React App
 
